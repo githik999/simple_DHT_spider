@@ -17,8 +17,8 @@ socket.on('listening', () => {
 
 socket.bind(6881)
 
-const host = 'dht.transmissionbt.com'
-const msg = 'd1:ad2:id20:abcdefghij0123456789e1:q4:ping1:t2:aa1:y1:qe'
+const host = '212.129.33.59'
+const msg = 'd1:ad2:id20:abcdefghij01234567896:target20:mnopqrstuvwxyz123456e1:q9:find_node1:t2:aa1:y1:qe'
 socket.send(msg,0,msg.length,6881,host,()=>{
     console.log('send',msg,'to',host,'success')
 })
